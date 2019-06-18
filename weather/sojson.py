@@ -548,7 +548,7 @@ def get_sojson_weather(city_name):
         weather_info = weather_info + '【今日温度】' + today_weather['low'] +'，'+ today_weather['high'] + '\n'
         weather_info = weather_info + '【今日风速】' + today_weather['fx']+ today_weather['fl'] + '\n'
         weather_info = weather_info + '【出行提示】' + today_weather['notice']+'\n\n'
-        print(weather_info)
+        # print(weather_info)
         return weather_info
 
     except Exception as exception:
@@ -559,6 +559,6 @@ def get_sojson_weather(city_name):
 get_today_weather = get_sojson_weather
 
 if __name__ == '__main__':
-    get_today_weather('青岛')
+    # get_today_weather('青岛')
 
     pass
